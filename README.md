@@ -6,9 +6,9 @@ An easy code previewing plugin made especially for part's kits. Kittn utilizes (
 Throw the vendor assets before your closing `<head>` or `<body>` tag.
 
     <!-- Vendor scripts -->
-    <script src="jquery.js"></script>
-    <script src="jquery.snippet.js"></script>
-    <link rel="stylesheet" href="jquery.snippet.css">
+    <script src="vendor/jquery.js"></script>
+    <script src="vendor/jquery.snippet.js"></script>
+    <link rel="stylesheet" href="vendor/jquery.snippet.css">
 
  Add the Kittn code before your closing `<body>`, but after the abve vendor assets.
     <!-- Kittn Begin! -->
