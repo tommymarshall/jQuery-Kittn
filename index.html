@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+	<head>
+	<meta charset="UTF-8">
+	<title>jQuery Kittn</title>
+	<link rel="stylesheet" href="jquery.snippet.css">
+	<style>
+		.site-wrapper {
+			font: 16px/1.25 'Proxima Nova';
+			margin: 80px auto;
+			padding: 0;
+			width: 50em;
+		}
+		.legal {
+			text-align: center;
+			font-size: 0.8em;
+		}
+		.kittn-code-overlay {
+			font-size: 12px;
+		}
+		.important {
+			color: green;
+			font-weight: bold;
+			font-size: 1.4em;
+		}
+		label {
+			display: block;
+			font-weight: bold;
+		}
+		input[type="text"] {
+			padding: 5px;
+			font-size: 16px;
+		}
+		img {
+			margin: 5px;
+			float: right;
+		}
+	</style>
+</head>
+<body>
+<div class="site-wrapper">
+
+<header class="global-header" data-kittn="true">
+	<h1>jQuery Kittn</h1>
+	<p>An easy code previewing plugin made especially for parts-kits.</p>
+	<p class="important">To toggle Kittn and start checking out markup, hold ALT.</p>
+</header>
+
+<div class="content" role="main" data-kittn="true">
+	<h2 class="page-title" data-kittn="true">Header content</h2>
+
+	<img src="http://placekitten.com/300/125" alt="What a cute Kittn!" data-kittn="true">
+
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam nam sunt perferendis recusandae fuga dolorum maiores ducimus. Autem aliquam dolor maiores ipsa animi assumenda porro consequuntur <em data-kittn="true">Quod accusamus reprehenderit</em>.</p>
+
+	<ul class="listing" data-kittn="true">
+		<li>consectetur adipisicing elit</li>
+		<li>eaque voluptatibus ex aut</li>
+		<li>explicabo quos <a href="http://viget.com" data-kittn="true">at deleniti rem</a></li>
+		<li>pariatur quibusdam omnis</li>
+	</ul>
+</div>
+
+<form action="" data-kittn="true">
+	<div class="input-wrapper">
+		<label for="name">Name</label>
+		<input type="text" id="name">
+	</div>
+	<div class="input-wrapper">
+		<label for="email">Email</label>
+		<input type="text" id="email">
+	</div>
+	<div class="input-wrapper">
+		<label for="message">Message</label>
+		<textarea id="message" cols="60" rows="10"></textarea>
+	</div>
+</form>
+
+<ul data-kittn="true">
+	<li>Lorem ipsum dolor sit amet,</li>
+	<li>Consectetur adipisicing elit,</li>
+	<li>Fuga doloremque necessitatibus qui atque,</li>
+	<li>Eligendi quos non saepe esse.</li>
+</ul>
+
+<footer class="global-footer" data-kittn="true">
+	<p class="legal">Here's the footer. Enjoy!</p>
+</footer>
+</div>
+
+<!-- Required Vendor scripts -->
+<script src="jquery.js"></script>
+<script src="jquery.snippet.js"></script>
+
+<!-- jQuery Kittn -->
+<script src="jquery.kittn.js"></script>
+<script type="text/javascript">
+	$('[data-kittn="true"]').kittn({
+		clipboardPath: 'ZeroClipboard.swf'
+	});
+</script>
+
+</body>
+</html>
