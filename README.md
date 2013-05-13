@@ -1,17 +1,16 @@
-# jQuery Kittn Plugin
+## jQuery Kittn Plugin
 
-An easy code previewing plugin made especially for parts-kits.
+An easy code previewing plugin made especially for part's kits. Kittn utilizes (for now) the [jQuery Snippet](http://www.steamdev.com/snippet/) plugin to prettify code snippets.
 
-## Getting Started
-Kittn utilizes (for now) the [jQuery Snippet](http://www.steamdev.com/snippet/) plugin to prettify code snippets.
-
-## The Code
+### Get Started
+Throw the vendor assets before your closing `<head>` or `<body>` tag.
 
     <!-- Vendor scripts -->
     <script src="jquery.js"></script>
     <script src="jquery.snippet.js"></script>
     <link rel="stylesheet" href="jquery.snippet.css">
 
+ Add the Kittn code before your closing `<body>`, but after the abve vendor assets.
     <!-- Kittn Begin! -->
     <script src="jquery.kittn.js"></script>
     <script type="text/javascript">
@@ -20,10 +19,10 @@ Kittn utilizes (for now) the [jQuery Snippet](http://www.steamdev.com/snippet/) 
 
 jQuery Kittn will then turn any element that has a `data-kittn="true"` attribute into a toggable snippet. Pretty cool, eh?
 
-## Usage
-Add the code above then hold the **Alt** key and click on an outlined (or other custom style you set) element. Kittn automatically removes the style applied by the plugin and the `data-kittn` attribute from the markup. Kittn also allows for nested parts kit code snippets.
+### Toggling Kittn and Usage
+After adding the above code to your site, open it up in the browser and hit the **Alt** key. Elements matching the selector you sent to the plugin will be outlined (or other custom style you set). Kittn automatically removes the style applied by the plugin and the `data-kittn` attribute from the markup. Kittn also allows for nested parts kit code snippets, so you don't want to worry about uncessary code being outputted in the snippet viewer.
 
-## Optional Parameters
+### Default/Optional Parameters
 
     $('[data-kittn="true"]').kittn({
         clipboardPath: "ZeroClipboard.swf",
